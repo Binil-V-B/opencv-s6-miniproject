@@ -20,7 +20,7 @@ def checkParkingSpaces(imgpro):
        # cv2.imshow(str(x*y),imgCrop)
         count=cv2.countNonZero(imgCrop)
         cvzone.putTextRect(img,str(count),(x,y+height-5),scale=1.5,thickness=2,offset=0) #used to display the text on the feed
-        if count<100:# when the no of pixels in a crop area is low, there might not be a car present there
+        if count<600:# when the no of pixels in a crop area is low, there might not be a car present there
             colour=(0,255,0)
         else:
             colour=(0,0,255)
@@ -44,8 +44,8 @@ while True:
 
 
     cv2.imshow("video",img)
-    cv2.imshow("imgblur",imgBlur)
-    cv2.imshow("afterdialate",imgMedian)
-    # cv2.imshow("imggray2",imgBlur2)
-    cv2.imshow("imgthresh",imgThershold)
+    # cv2.imshow("imgblur",imgBlur)
+    # cv2.imshow("afterdialate",imgMedian)
+    # # cv2.imshow("imggray2",imgBlur2)
+    # cv2.imshow("imgthresh",imgThershold)
     cv2.waitKey(10)
