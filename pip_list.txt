@@ -1,0 +1,12 @@
+Package           Version 
+----------------- --------
+asgiref           3.7.2   
+cvzone            1.6.1   
+Django            3.2.25  
+numpy             1.21.6  
+opencv-python     4.9.0.80
+pip               19.0.3  
+pytz              2024.1  
+setuptools        40.8.0  
+sqlparse          0.4.4
+typing-extensions 4.7.1
